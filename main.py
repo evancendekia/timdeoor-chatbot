@@ -18,6 +18,9 @@ async def on_message(message): #on_message()is called when the bot receives a me
         return
 
     if message.content.startswith('!hi'):
-        await message.channel.send(f'Hello 👋😃')      
+        await message.channel.send(f'Hello 👋😃')     
+
+    if message.content.startswith('!test'):
+        await message.channel.send(f'Test is working')      
 
 client.run(os.environ["DISCORD_TOKEN"])
